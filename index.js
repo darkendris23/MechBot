@@ -7,9 +7,7 @@ const prefix = "m!";
 client.on("ready", () => {
   console.log("I am ready!");
 });
-
-//global vars
-
+//=====================================================================================================================================================================================================
 //commands
 client.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -29,7 +27,7 @@ client.on("message", (message) => {
   //if Emblems
   .then((collected) => {
     const embed = new Discord.RichEmbed()
-  .setAuthor("Server Shop ", "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png")
+  .setAuthor("Server Shop: Emblems", "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/shop-icon.png")
   .setColor(0x00AE86)
   .setDescription("[1] - Emblems \n[2] -Icons \n[3] - Gif's \n[4] - Emotes \n[5] - Ranks \n[6] - Info Card Back Grounds \n reply with (🗙) to cancel")
       message.reply({embed});
@@ -37,7 +35,7 @@ client.on("message", (message) => {
 });
 }
 });
-
+//=====================================================================================================================================================================================================
 // Create an event listener for new guild members
 client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
