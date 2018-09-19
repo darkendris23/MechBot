@@ -1,1 +1,0 @@
-//Notes for resources folder.
