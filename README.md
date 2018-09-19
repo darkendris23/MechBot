@@ -1,2 +1,2 @@
 # MechBot
-My first repository on GitHub.
+This repo is for the resources of MechBot
